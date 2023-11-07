@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { createContext, useContext } from "react";
+import "./App.css";
+import { PreviousDraws } from "./components/PreviousDraws";
+import { TicketDetails } from "./components/TicketDetails";
+import './styles/styles.css'
 
-function App() {
+import lotteryData from './lotteryData.json'
+
+const LotteryContext = createContext()
+
+export const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <LotteryContext.Provider value ={{ lotteryData }}>
+      <section className="ticket-details-section">
+        <TicketDetails />
+      </section>
+      <section className="previous-draws-section">
+        <PreviousDraws />
+      </section>
+      </LotteryContext.Provider>
   );
-}
+};
 
-export default App;
+export const useLotteryContext = () => {
+  return useContext(LotteryContext)
+}

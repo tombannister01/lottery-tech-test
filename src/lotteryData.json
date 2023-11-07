@@ -1,0 +1,47 @@
+{
+    "lottery": "Super Jackpot Lottery",
+    "ticketDetails": [
+      {
+        "imageUrl": "images/lottery-ticket.png",
+        "ticketNumber": "123456",
+        "purchaseDate": "2023-11-01",
+        "price": 10.0,
+        "numbers": [5, 12, 23, 37, 42, 8]
+      },
+      {
+        "imageUrl": "images/lottery-ticket-2.png",
+        "ticketNumber": "789012",
+        "purchaseDate": "2023-11-02",
+        "price": 10.0,
+        "numbers": [2, 15, 28, 34, 41, 7]
+      },
+      {
+        "imageUrl": "images/lottery-ticket.png",
+        "ticketNumber": "345678",
+        "purchaseDate": "2023-11-03",
+        "price": 10.0,
+        "numbers": [10, 18, 26, 32, 38, 6]
+      }
+    ],
+    "previousDraws": [
+      {
+        "imageUrl": "images/lottery-ticket.png",
+        "drawDate": "2023-10-28",
+        "winningNumbers": [4, 11, 21, 32, 39, 7],
+        "jackpotAmount": 1000000.0
+      },
+      {
+        "imageUrl": "images/lottery-ticket.png",
+        "drawDate": "2023-10-21",
+        "winningNumbers": [7, 14, 25, 31, 46, 3],
+        "jackpotAmount": 1500000.0
+      },
+      {
+        "imageUrl": "images/lottery-ticket.png",
+        "drawDate": "2023-10-14",
+        "winningNumbers": [3, 10, 20, 30, 35, 9],
+        "jackpotAmount": 800000.0
+      }
+    ]
+  }
+  

@@ -1,0 +1,33 @@
+.individual-ticket {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 75%;
+    background-size: cover;
+}
+
+@media only screen and (max-width: 444px){
+   section .individual-ticket {
+        background-image: none;
+    }
+}
+
+.ticket-details-section, 
+.previous-draws-section {
+    border: 1px solid blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ticket-details-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    border: 1px solid black;
+    background-color: white;
+    width: 50%;
+}
