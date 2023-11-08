@@ -1,4 +1,4 @@
-import React, { createContext, useContext } from "react";
+import React, { createContext, useContext, useState } from "react";
 import "./App.css";
 import { PreviousDraws } from "./components/PreviousDraws";
 import { TicketDetails } from "./components/TicketDetails";
@@ -6,21 +6,20 @@ import './styles/styles.css'
 
 import lotteryData from './lotteryData.json'
 
-const LotteryContext = createContext()
+
 
 export const App = () => {
   return (
-    <LotteryContext.Provider value ={{ lotteryData }}>
+    // <LotteryContext.Provider value ={{ lotteryData }}>
+    <>
       <section className="ticket-details-section">
-        <TicketDetails />
+        <TicketDetails lotteryData={lotteryData}/>
       </section>
       <section className="previous-draws-section">
-        <PreviousDraws />
+        <PreviousDraws lotteryData={lotteryData}/>
       </section>
-      </LotteryContext.Provider>
+      </>
+      // </LotteryContext.Provider>
   );
 };
 
-export const useLotteryContext = () => {
-  return useContext(LotteryContext)
-}

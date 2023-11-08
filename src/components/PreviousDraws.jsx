@@ -2,8 +2,9 @@ import React from "react";
 import { useLotteryContext } from "../App";
 import { formatCurrency } from "../utils/utils.js";
 
-export const PreviousDraws = () => {
-  const { lotteryData } = useLotteryContext();
+export const PreviousDraws = ({ lotteryData }) => {
+  // console.log(props.lotteryData.previousDraws)
+  // const { lotteryData } = useLotteryContext();
 
   return (
     <>

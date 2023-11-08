@@ -2,8 +2,8 @@ import React from "react";
 import { useLotteryContext } from "../App";
 import "../styles/styles.css";
 
-export const TicketDetails = () => {
-  const { lotteryData } = useLotteryContext();
+export const TicketDetails = ({ lotteryData }) => {
+  // const { lotteryData } = useLotteryContext();
   return (
     <>
     <div className="heading">
